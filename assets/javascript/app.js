@@ -65,7 +65,7 @@ $(document).ready(function () {
     $(".start-button").on("click", function () {
 
         // setting intervals for the timer
-        var number = 10;
+        var number = 40;
         var timer;
         function testTimer() {
             timer = setInterval(decrement, 1000);
@@ -81,6 +81,10 @@ $(document).ready(function () {
             }
         };
         decrement();
+
+
+        // question starts here 1
+
         for (var i = 0; i < questionBank.one.answers.length; i++) {
             console.log(questionBank.one.answers[i]);
             var answersDiv = $("<Div></Div>");
